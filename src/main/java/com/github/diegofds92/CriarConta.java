@@ -5,13 +5,13 @@ public class CriarConta {
         Conta primeiraConta = new Conta();
         Conta segundaConta = new Conta();
 
-        primeiraConta.saldo = 200;
-        System.out.println(primeiraConta.saldo);
+        primeiraConta.depositar(200);
+        System.out.println(primeiraConta.pegaSaldo());
 
-        segundaConta.saldo = 50;
-        System.out.println(segundaConta.saldo);
+        segundaConta.depositar(50);
+        System.out.println(segundaConta.pegaSaldo());
 
         primeiraConta.depositar(150);
-        System.out.println(primeiraConta.saldo);
+        System.out.println(primeiraConta.pegaSaldo());
     }
 }

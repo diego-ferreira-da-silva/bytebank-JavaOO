@@ -1,7 +1,7 @@
 package com.github.diegofds92;
 
 public class Conta {
-    double saldo;
+    private double saldo;
     int agencia, numero;
     Cliente titular;
 
@@ -26,6 +26,10 @@ public class Conta {
         }else{
             return false;
         }
+    }
+
+    public double pegaSaldo(){
+        return this.saldo;
     }
 
 
