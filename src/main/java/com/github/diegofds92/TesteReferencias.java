@@ -5,7 +5,7 @@ public class TesteReferencias {
         Conta primeiraConta = new Conta();
         primeiraConta.depositar(300);
 
-        System.out.println("Saldo da primeira: " + primeiraConta.pegaSaldo());
+        System.out.println("Saldo da primeira: " + primeiraConta.getSaldo());
 
         Conta segundaConta = primeiraConta;
 

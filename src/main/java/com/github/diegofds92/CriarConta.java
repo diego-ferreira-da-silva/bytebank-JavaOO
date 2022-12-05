@@ -6,12 +6,12 @@ public class CriarConta {
         Conta segundaConta = new Conta();
 
         primeiraConta.depositar(200);
-        System.out.println(primeiraConta.pegaSaldo());
+        System.out.println(primeiraConta.getSaldo());
 
         segundaConta.depositar(50);
-        System.out.println(segundaConta.pegaSaldo());
+        System.out.println(segundaConta.getSaldo());
 
         primeiraConta.depositar(150);
-        System.out.println(primeiraConta.pegaSaldo());
+        System.out.println(primeiraConta.getSaldo());
     }
 }

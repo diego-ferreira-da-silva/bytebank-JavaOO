@@ -1,9 +1,9 @@
-package com.github.diegofds92;
+package bytebankEncapsulado;
 
 public class Conta {
     private double saldo;
-    int agencia, numero;
-    Cliente titular;
+    private int agencia, numero;
+    private Cliente titular;
 
     public void depositar(double valorDepositar){
         this.saldo += valorDepositar;
@@ -32,5 +32,19 @@ public class Conta {
         return this.saldo;
     }
 
+    public int getNumero(){
+        return this.numero;
+    }
+    public void setNumero(int numero){
+        this.numero = numero;
+    }
 
+
+    public int getAgencia() {
+        return this.agencia;
+    }
+
+    public void setAgencia(int agencia) {
+        this.agencia = agencia;
+    }
 }
